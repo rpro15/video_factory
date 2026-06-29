@@ -1,0 +1,37 @@
+models_dir: "models"
+output_dir: "output"
+temp_dir: "temp"
+sd_model: "models/sdxl-base"
+sd_step: 35
+sd_guidance_scale: 6.0
+sd_width: 1024
+sd_height: 1024
+enable_controlnet: true
+controlnet_models:
+  - "models/controlnet-canny"
+  - "models/controlnet-depth"
+use_ip_adapter: true
+ip_adapter_path: "models/ip-adapter"
+use_animatediff: true
+animatediff_motion: "models/animatediff-sdxl"
+animatediff_lightning: "models/sdxl-lightning"
+tts_model: "xtts-v2"
+tts_path: "models/xtts-v2"
+tts_speaker: "female"
+tts_sample_rate: 24000
+use_wav2lip: true
+wav2lip_path: "models/wav2lip"
+face_image: "models/face.png"
+use_gfpgan: true
+gfpgan_path: "models/gfpgan"
+use_realesrgan: true
+realesrgan_path: "models/realesrgan"
+fps: 30
+video_width: 1080
+video_height: 1920
+subtitles_enabled: true
+subtitles_static: false
+subtitles_font_size: 48
+subtitles_color: "white"
+subtitles_stroke_color: "black"
+subtitles_margin_bottom: 80
